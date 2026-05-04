@@ -41,6 +41,17 @@ sudo apt install cmake build-essential extra-cmake-modules qt6-base-dev libkf6ki
 sudo apt install apt-xapian-index software-properties-qt
 ```
 
+## Development
+
+On Kubuntu 26.04, a different QApt library is needed than the one in the system APT repositories.
+
+The build.sh script automatically downloads and compiles the expected version of libqapt. It is possible to 
+use it for development in a convenient way:
+
+1. Clone the repository.
+2. Run `bash build.sh` to build and install muon.
+3. Pass `-DQApt_DIR=<repository path>/build/libqapt-stage/usr/lib/x86_64-linux-gnu/cmake/QApt/` to CMake when building your project.
+
 ## Notes
 
 - Requires KDE Neon or Ubuntu 24.04+ with KF6 packages.
