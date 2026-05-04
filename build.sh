@@ -13,7 +13,7 @@ MUON_VERSION="6.0.0"
 PKG_DIR="$SCRIPT_DIR/build/pkg"
 
 # Install build dependencies
-sudo apt install -y cmake build-essential extra-cmake-modules qt6-base-dev libkf6kio-dev kf6-kdbusaddons-dev libkf6i18n-dev kf6-kiconthemes-dev kf6-kxmlgui-dev libxapian-dev libapt-pkg-dev libpolkit-qt6-1-dev debhelper curl
+sudo apt install cmake build-essential extra-cmake-modules qt6-base-dev libkf6kio-dev libkf6dbusaddons-dev libkf6i18n-dev libkf6iconthemes-dev libkf6xmlgui-dev libxapian-dev libapt-pkg-dev libpolkit-qt6-1-dev debhelper curl
 
 # ============================================================
 # 1. Build libqapt (Qt6/KF6) — install to a staging prefix
